@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Section Styles */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+#about {
+  background-color: #e2e2e2;
+}
+
+#services {
+  background-color: #d1d1d1;
+}
+
+#portfolio {
+  background-color: #c0c0c0;
+}
+
+#contact {
+  background-color: #afafaf;
+}
+
+/* Navigation Menu Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 18px;
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #6a11cb;
+  background: white;
+  border-radius: 5px;
+  transform: translateY(-3px);
+}
+
+/* Scroll Effect */
+#navbar.scrolled {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#navbar.scrolled ul li a {
+  color: #fff;
+}
+
+#navbar.scrolled ul li a:hover {
+  color: #2575fc;
+  background: white;
+}
